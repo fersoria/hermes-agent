@@ -95,7 +95,7 @@ class AIAgent:
         self,
         base_url: str = None,
         api_key: str = None,
-        model: str = "anthropic/claude-opus-4.6",  # OpenRouter format
+        model: str = "anthropic/claude-sonnet-4-6",  # OpenRouter format
         max_iterations: int = 60,  # Default tool-calling iterations
         tool_delay: float = 1.0,
         enabled_toolsets: List[str] = None,
@@ -2496,7 +2496,7 @@ class AIAgent:
 
 def main(
     query: str = None,
-    model: str = "anthropic/claude-opus-4.6",
+    model: str = "anthropic/claude-sonnet-4-6",
     api_key: str = None,
     base_url: str = "https://openrouter.ai/api/v1",
     max_turns: int = 10,
